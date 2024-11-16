@@ -29,11 +29,29 @@
     color: white;
 }
 
-.menu {
-    font-size: 16px;
+.menu a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+  }
+  
+  /* Use a transition to make the hover effect smoother */
+  .menu a {
+    transition: opacity 0.3s, border-bottom 0.3s;
     color: white;
-    opacity: 0.9;
-}
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  
+  /* Increase the opacity on hover for better contrast */
+  .menu a:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Add a slightly larger bottom margin to the menu container */
+  .menu {
+    margin-bottom: 10px;
+  }
 
 .nav-left, .nav-right {
     position: relative;
